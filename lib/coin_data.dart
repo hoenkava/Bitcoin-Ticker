@@ -37,7 +37,7 @@ class coinData {
     Map<String, String> cryptoPrices = {};
     for (String i in cryptoList) {
       http.Response getResponse = await http.get(
-          'https://rest.coinapi.io/v1/exchangerate/$i/$selectedCurrency?apiKey=094415FF-58F6-46A7-82E2-27A0E22B7DD5');
+          'https://rest.coinapi.io/v1/exchangerate/$i/$selectedCurrency?apiKey='Your api Goes here');
       if (getResponse.statusCode == 200) {
         var decodedData = jsonDecode(getResponse.body);
         // print(decodedData);
